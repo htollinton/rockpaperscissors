@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <form id ="player-selection">
-        <input type="radio" value="rock" name = "player-selection" >
-        <label for="rock">Rock</label><br>
-        <input type="radio" value="paper" name = "player-selection">
-        <label for="paper">Paper</label><br>
-        <input type="radio" value="scissors" name = "player-selection">
-        <label for="scissors">Scissors</label>
-        <button type="submit">Submit</button>
+    <form onsubmit="return false;" >
+        <input type="radio" value="rock" id = "rock" name = "player-selection" >
+        <label for="rock">Rock</label>
+        <input type="radio" value="paper" id = "paper" name = "player-selection">
+        <label for="paper">Paper</label>
+        <input type="radio" value="scissors" id = "scissors" name = "player-selection">
+        <label for="scissors">Scissors</label><br>
+        <button type="submit" id ="player-selection" onclick="playGame()" >Submit</button>
     </form>
+    <h1><span id ="display"></span></h1>
+    <h2><span id ="score"></span></h1>
+    <h3><span id ="result"></span></h1>
     
     
     <script src ="script.js"></script>
+    
 </body>
 </html>
